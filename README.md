@@ -1,13 +1,6 @@
-![Kent Hack Enough](http://khe.io/img/logo.png "Kent Hack Enough")
----
-The world's best hackathon website.
-
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
-
-## About
-This API was made in an effort to ease the organization of Kent Hack Enough as we continue to grow in size. This project was built and is maintained by Paul Dilyard (@pdilyard). Feel free to contact me with any questions.
-
-To get familiar with this repository, please check out the documentation in the sidebar on the right. If you're interested in contributing, check out the [Contributing](Contributing) guide. If you're building a client for the API, you can get started by checking out the [API](API) guides.
+#DerbyHacks
+This repo was forked from the wonderful [Kent Hack Enough](https://github.com/hacksu) Organization's website. It was designed by Paul Dilyard (@pdilyard) to make KHE the best it could be. It is now being used to make DerbyHacks the best that it can be.
+This version of the Repo is managed by Shayne Hemminger.
 
 ## Documentation
 See the repository's [Wiki](https://github.com/SpeedACMHack/HackathonSite/wiki) for detailed documentation.

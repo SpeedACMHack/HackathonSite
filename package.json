@@ -1,5 +1,5 @@
 {
-  "name": "kenthackenough",
+  "name": "DerbyHacks",
   "version": "1.0.0",
   "description": "The world's best hackathon website.",
   "scripts": {
@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/hacksu/kenthackenough/issues"
   },
-  "homepage": "http://khe.io",
+  "homepage": "http://derbyhacks.io",
   "devDependencies": {
     "mocha": "2.3.x",
     "should": "7.1.x",
@@ -32,7 +32,7 @@
     "extend": "3.0.x",
     "flow": "0.2.x",
     "marked": "0.3.x",
-    "mongoose": "4.1.x",
+    "mongoose": "^4.2.9",
     "multiparty": "4.1.x",
     "node-gcm": "0.12.x",
     "redis": "2.0.x",

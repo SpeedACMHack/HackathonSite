@@ -22,13 +22,13 @@ if [ -f /etc/nginx/sites-available/default ]; then
   rm /etc/nginx/sites-enabled/default
 fi
 if [ $1 == "dev" ]; then
-  cp /var/www/kenthackenough/config/dev.conf /etc/nginx/sites-available
+  cp /var/www/HackathonSite/config/dev.conf /etc/nginx/sites-available
   ln -s /etc/nginx/sites-available/dev.conf /etc/nginx/sites-enabled
 fi
 service nginx reload
 
 # install libraries
-cd /var/www/kenthackenough
+cd /var/www/HackathonSite
 npm install
 
 # pm2

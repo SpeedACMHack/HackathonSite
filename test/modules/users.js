@@ -53,10 +53,6 @@ module.exports = function (callback/*admin*/) {
 
     // Remove the admin user
     after(function (done) {
-      User.remove({email: 'admin@test.com'}, function (err) {
-        if (err) throw err;
-        done();
-      });
     });
 
     // Remove the test user

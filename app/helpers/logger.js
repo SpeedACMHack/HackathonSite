@@ -10,7 +10,7 @@ if (process.env.NODE_ENV == 'production' || process.env.NODE_ENV == 'test') {
     streams: [
       {
         level: 'warn',
-        path: '/var/tmp/kenthackenough.log'
+        path: '/var/tmp/HackathonSite.log'
       }
     ]
   });
@@ -26,7 +26,7 @@ if (process.env.NODE_ENV == 'production' || process.env.NODE_ENV == 'test') {
       },
       {
         level: 'warn',
-        path: '/var/tmp/kenthackenough.log'
+        path: '/var/tmp/HackathonSite.log'
       }
     ]
   });

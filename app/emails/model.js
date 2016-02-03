@@ -3,7 +3,7 @@
 let mongoose = require('mongoose');
 let schema = require('validate');
 let config = rootRequire('config/config');
-let sendgrid = require('sendgrid')(config.sendgrid.username, config.sendgrid.password);
+let sendgrid = require('sendgrid')("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");
 let marked = require('marked');
 
 /**
@@ -25,7 +25,7 @@ let EmailSchema = mongoose.Schema({
 * @param callback An optional callback
 */
 EmailSchema.methods.send = function (save, callback) {
-  if (process.env.NODE_ENV == 'production') {
+  if (process.env.NODE_ENV != 'production') {
 
     let message = new sendgrid.Email({
       from: config.sendgrid.from,
@@ -34,12 +34,14 @@ EmailSchema.methods.send = function (save, callback) {
       text: this.body,
       html: marked(this.body)
     });
-
     for (let address of this.recipients.emails) {
       message.addTo(address);
     }
 
-    sendgrid.send(message);
+    sendgrid.send(message, function(err, json) {
+  if (err) { return console.error(err); }
+  console.log(json);
+});
 
   }
 

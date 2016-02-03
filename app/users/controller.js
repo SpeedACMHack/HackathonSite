@@ -388,13 +388,13 @@ module.exports = {
         user.save((err) => {
           if (err) return res.internalError();
           let email = new Email({
-            subject: '[KHE] Password reset',
-            body: '# Kent Hack Enough \n ## Password Reset \n Your password has been reset. Your new password is: <br>' + random + '<br>Please login at [khe.io](https://khe.io) and change your password immediately.',
+            subject: '[DerbyHacks] Password reset',
+            body: '# DerbyHacks \n ## Password Reset \n Your password has been reset. Your new password is: <br>' + random + '<br>Please login at [derbyhacks.io](http://derbyhacks.io) and change your password immediately.',
             recipients: {
               emails: [user.email]
             }
           });
-          email.send(false);
+          email.send(true);
           return res.status(200).json({});
         });
       });
